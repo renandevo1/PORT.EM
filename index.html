@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="generator" content="Hostinger Horizons" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Coração Leve - Alcance seu peso ideal e transforme sua vida com nosso programa de emagrecimento saudável." />
+		<meta name="keywords" content="emagrecimento, dieta, saúde, bem-estar, perder peso, coração leve" />
+		<title>Coração Leve - Emagrecimento Saudável</title>
+		<style>
+			body {
+				font-family: 'Arial', sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f9f9f9;
+				color: #333;
+				line-height: 1.6;
+			}
+			.container {
+				width: 90%;
+				max-width: 1200px;
+				margin: auto;
+				overflow: hidden;
+				padding: 20px;
+			}
+			header {
+				background: linear-gradient(135deg, #e6fffa 0%, #f0f9ff 50%, #fff5e6 100%);
+				color: #333;
+				padding: 20px 0;
+				border-bottom: 3px solid #4fd1c5; /* Teal color for emagrecimento theme */
+				text-align: center;
+			}
+			header h1 {
+				margin: 0;
+				font-size: 2.5em;
+				background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 50%, #f6ad55 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+			nav ul {
+				padding: 0;
+				list-style: none;
+				text-align: center;
+				margin-top: 10px;
+			}
+			nav ul li {
+				display: inline;
+				margin-right: 20px;
+			}
+			nav ul li a {
+				color: #555;
+				text-decoration: none;
+				font-weight: bold;
+				transition: color 0.3s ease;
+			}
+			nav ul li a:hover {
+				color: #38b2ac;
+			}
+			.hero {
+				background: linear-gradient(rgba(230,255,250,0.8), rgba(240,249,255,0.8)), url('https://images.unsplash.com/photo-1542869009-0af060465065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhbHRoeSUyMGZvb2QlMjB3ZWlnaHQlMjBsb3NzfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60') no-repeat center center/cover;
+				color: #333;
+				padding: 80px 20px;
+				text-align: center;
+			}
+			.hero h2 {
+				font-size: 3em;
+				margin-bottom: 20px;
+			}
+			.hero p {
+				font-size: 1.2em;
+				margin-bottom: 30px;
+			}
+			.btn {
+				display: inline-block;
+				background: #4fd1c5;
+				color: #fff;
+				padding: 12px 25px;
+				text-decoration: none;
+				border-radius: 25px;
+				font-weight: bold;
+				transition: background-color 0.3s ease, transform 0.2s ease;
+				box-shadow: 0 4px 15px rgba(79, 209, 197, 0.4);
+			}
+			.btn:hover {
+				background: #38b2ac;
+				transform: translateY(-2px);
+			}
+			section {
+				padding: 60px 20px;
+				text-align: center;
+			}
+			section h2 {
+				font-size: 2.5em;
+				margin-bottom: 40px;
+				color: #38b2ac;
+			}
+			.services-grid, .testimonials-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 30px;
+				margin-top: 30px;
+			}
+			.service-item, .testimonial-item {
+				background: #fff;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.service-item:hover, .testimonial-item:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+			}
+			.service-item h3, .testimonial-item h4 {
+				font-size: 1.5em;
+				margin-bottom: 10px;
+				color: #38b2ac;
+			}
+			.testimonial-item p {
+				font-style: italic;
+				color: #555;
+			}
+			.testimonial-item span {
+				display: block;
+				margin-top: 10px;
+				font-weight: bold;
+				color: #333;
+			}
+			form {
+				background: #fff;
+				padding: 40px;
+				border-radius: 10px;
+				box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+				max-width: 600px;
+				margin: 40px auto;
+				text-align: left;
+			}
+			form label {
+				display: block;
+				margin-bottom: 8px;
+				font-weight: bold;
+				color: #555;
+			}
+			form input[type="text"],
+			form input[type="email"],
+			form input[type="tel"],
+			form textarea,
+			form select {
+				width: calc(100% - 22px);
+				padding: 12px;
+				margin-bottom: 20px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				font-size: 1em;
+				transition: border-color 0.3s ease;
+			}
+			form input[type="text"]:focus,
+			form input[type="email"]:focus,
+			form input[type="tel"]:focus,
+			form textarea:focus,
+			form select:focus {
+				border-color: #4fd1c5;
+				outline: none;
+			}
+			form button {
+				display: block;
+				width: 100%;
+				padding: 15px;
+				background: #4fd1c5;
+				color: white;
+				border: none;
+				border-radius: 25px;
+				cursor: pointer;
+				font-size: 1.1em;
+				font-weight: bold;
+				transition: background-color 0.3s ease, transform 0.2s ease;
+			}
+			form button:hover {
+				background: #38b2ac;
+				transform: translateY(-2px);
+			}
+			footer {
+				background: #2d3748; /* Darker footer */
+				color: #fff;
+				text-align: center;
+				padding: 30px 20px;
+				margin-top: 60px;
+			}
+			footer p {
+				margin: 0;
+			}
+			.responsive-img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin-bottom: 20px;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			}
+			#form-message {
+				margin-top: 20px;
+				padding: 15px;
+				border-radius: 5px;
+				text-align: center;
+				font-weight: bold;
+			}
+			.success-message {
+				background-color: #c6f6d5;
+				color: #2f855a;
+				border: 1px solid #9ae6b4;
+			}
+			.error-message {
+				background-color: #fed7d7;
+				color: #c53030;
+				border: 1px solid #feb2b2;
+			}
+
+			@media (max-width: 768px) {
+				header h1 { font-size: 2em; }
+				.hero h2 { font-size: 2.2em; }
+				.hero p { font-size: 1em; }
+				nav ul li { display: block; margin: 10px 0; }
+				.services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Coração Leve</h1>
+				<nav>
+					<ul>
+						<li><a href="#hero">Início</a></li>
+						<li><a href="#about">Nosso Método</a></li>
+						<li><a href="#services">Programas</a></li>
+						<li><a href="#testimonials">Resultados</a></li>
+						<li><a href="#contact">Comece Já</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="hero" class="hero">
+			<div class="container">
+				<h2>Conquiste seu corpo ideal com leveza e saúde!</h2>
+				<p>Descubra nosso método de emagrecimento definitivo. Perca peso de forma saudável, sustentável e sem dietas restritivas. Sua transformação começa agora!</p>
+				<a href="#contact" class="btn">Quero Emagrecer Agora!</a>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="container">
+				<h2>Nosso Método Exclusivo</h2>
+				<img  class="responsive-img" alt="Infográfico do método Coração Leve para emagrecimento saudável" src="https://images.unsplash.com/photo-1702469224157-327a08d6061a" />
+				<p>No Coração Leve, desenvolvemos um método único que foca no emagrecimento consciente e duradouro. Combinamos reeducação alimentar, planos de exercícios personalizados e acompanhamento profissional contínuo para garantir que você alcance seus objetivos e mantenha os resultados. Diga adeus ao efeito sanfona!</p>
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="container">
+				<h2>Nossos Programas de Emagrecimento</h2>
+				<div class="services-grid">
+					<div class="service-item">
+						<img  class="responsive-img" style="max-height: 200px; object-fit: cover;" alt="Prato de comida saudável e colorida" src="https://images.unsplash.com/photo-1683106377671-9aa76429f2a8" />
+						<h3>Plano Alimentar Personalizado</h3>
+						<p>Receba um plano alimentar delicioso e fácil de seguir, criado por nutricionistas para suas necessidades e preferências.</p>
+					</div>
+					<div class="service-item">
+						<img  class="responsive-img" style="max-height: 200px; object-fit: cover;" alt="Pessoa se exercitando com alegria" src="https://images.unsplash.com/photo-1637579674775-7f868ee3c92d" />
+						<h3>Treinos Eficazes</h3>
+						<p>Programas de exercícios que queimam calorias e tonificam o corpo, adaptados ao seu nível e rotina.</p>
+					</div>
+					<div class="service-item">
+						<img  class="responsive-img" style="max-height: 200px; object-fit: cover;" alt="Coach de emagrecimento motivando cliente" src="https://images.unsplash.com/photo-1666214278797-b2cc1b12be76" />
+						<h3>Acompanhamento Contínuo</h3>
+						<p>Suporte de especialistas para manter você motivado, ajustar seu plano e celebrar suas conquistas.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="container">
+				<h2>Resultados que Inspiram</h2>
+				<div class="testimonials-grid">
+					<div class="testimonial-item">
+						<img  class="responsive-img" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; object-fit: cover;" alt="Foto de antes e depois de cliente que emagreceu" src="https://images.unsplash.com/photo-1679268077765-fbc167e1d9e5" />
+						<p>"Com o Coração Leve, perdi 15kg em 3 meses sem passar fome! Minha autoestima e energia são outras!"</p>
+						<span>- Carla M.</span>
+					</div>
+					<div class="testimonial-item">
+						<img  class="responsive-img" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; object-fit: cover;" alt="Foto de cliente satisfeito com o programa de emagrecimento" src="https://images.unsplash.com/photo-1609202294447-002f37886769" />
+						<p>"O acompanhamento foi fundamental. Aprendi a comer bem e os treinos são ótimos. Já eliminei 10kg!"</p>
+						<span>- Roberto F.</span>
+					</div>
+					<div class="testimonial-item">
+						<img  class="responsive-img" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; object-fit: cover;" alt="Mulher radiante após alcançar seu objetivo de emagrecimento" src="https://images.unsplash.com/photo-1646909876562-9a00dab98e65" />
+						<p>"Finalmente encontrei um programa que funciona de verdade. Recomendo o Coração Leve para todos!"</p>
+						<span>- Sofia L.</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<h2>Comece Sua Transformação Agora!</h2>
+				<p>Preencha o formulário e dê o primeiro passo para conquistar o corpo dos seus sonhos com saúde e leveza. Nossa equipe entrará em contato.</p>
+				<form id="onboardingForm">
+					<div>
+						<label for="name">Nome Completo:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="email">E-mail:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="phone">Telefone (WhatsApp):</label>
+						<input type="tel" id="phone" name="phone" required>
+					</div>
+					<div>
+						<label for="current_weight">Peso Atual (kg - opcional):</label>
+						<input type="text" id="current_weight" name="current_weight">
+					</div>
+					<div>
+						<label for="goal_weight">Meta de Peso (kg - opcional):</label>
+						<input type="text" id="goal_weight" name="goal_weight">
+					</div>
+					<div>
+						<label for="goals">Principal Objetivo com o Emagrecimento:</label>
+						<select id="goals" name="goals" required>
+							<option value="">Selecione seu principal objetivo</option>
+							<option value="perder-peso">Perder Peso de Forma Geral</option>
+							<option value="melhorar-saude">Melhorar a Saúde e Disposição</option>
+							<option value="definicao-muscular">Definição Muscular</option>
+							<option value="reeducacao-alimentar">Aprender a Comer Melhor (Reeducação)</option>
+							<option value="autoestima">Aumentar a Autoestima</option>
+						</select>
+					</div>
+					<div>
+						<label for="message">Mensagem (Opcional - Conte-nos mais sobre seus desafios):</label>
+						<textarea id="message" name="message" rows="4"></textarea>
+					</div>
+					<button type="submit">Quero Emagrecer com o Coração Leve!</button>
+				</form>
+				<div id="form-message"></div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>&copy; <span id="currentYear"></span> Coração Leve Emagrecimento. Todos os direitos reservados.</p>
+				<p>Resultados podem variar. Consulte sempre um profissional de saúde.</p>
+				<p>contato@coracaoleveemagrecimento.com.br | (11) 98888-7777</p>
+			</div>
+		</footer>
+
+		<script>
+			document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+			const form = document.getElementById('onboardingForm');
+			const formMessage = document.getElementById('form-message');
+
+			form.addEventListener('submit', function(event) {
+				event.preventDefault();
+				formMessage.innerHTML = ''; 
+				formMessage.classList.remove('success-message', 'error-message');
+
+				const formData = new FormData(form);
+				const data = {};
+				formData.forEach((value, key) => {
+					data[key] = value;
+				});
+
+				console.log('Dados do formulário de emagrecimento:', data);
+				
+				try {
+					let submissions = JSON.parse(localStorage.getItem('coracaoLeve_emagrecimento_submissions') || '[]');
+					submissions.push({ ...data, timestamp: new Date().toISOString(), id: Date.now() });
+					localStorage.setItem('coracaoLeve_emagrecimento_submissions', JSON.stringify(submissions));
+					
+					formMessage.textContent = 'Formulário enviado com sucesso! Em breve nossa equipe de especialistas entrará em contato com você.';
+					formMessage.classList.add('success-message');
+					form.reset();
+				} catch (error) {
+					console.error('Erro ao salvar no localStorage:', error);
+					formMessage.textContent = 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.';
+					formMessage.classList.add('error-message');
+				}
+
+				setTimeout(() => {
+					formMessage.innerHTML = '';
+					formMessage.classList.remove('success-message', 'error-message');
+				}, 6000);
+			});
+
+			document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					const targetId = this.getAttribute('href');
+					const targetElement = document.querySelector(targetId);
+					if (targetElement) {
+						targetElement.scrollIntoView({
+							behavior: 'smooth'
+						});
+					}
+				});
+			});
+		</script>
+		<div id="root-vite-loader" style="display:none;"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
+</html>
